@@ -1,0 +1,87 @@
+:root {
+    --font: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #18181E;
+    color: white;
+}
+
+#main,#loader {
+    transition: opacity 1s ease;
+}
+
+#name {
+    user-select: none;
+    margin-left: 1.5%;
+    vertical-align: middle;
+    height: 5%;
+    font-size: 3.5vw;
+    color: white;
+    font-family: var(--font);
+}
+
+.rightMenu {
+    font-size: 3.5vw;
+    height: 5%;
+    width: 70%;
+    float: right;
+    text-align: center;
+}
+
+a.margin {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 100ms linear;
+}
+
+.rightMenu > a:hover {
+    color: orange
+}
+
+#loader {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-family: var(--font); 
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    padding: 40px 20% 40px 5%;
+    width: 75%;
+    background: #0D9EDF;
+}
+
+img.usericon {
+    vertical-align: middle;
+    height: 5%;
+    width: 5%;
+}
+
+span.section {
+    margin: 1% 0 0 0;
+    border: 2px white solid;
+    padding: 10px 10px 10px 10px;
+    font-size: 5vw;
+    font-family: var(--font);
+}
+
+@media only screen and (max-width: 800px) {
+    #name {
+        font-size: 30px;
+    }
+    img.usericon {
+        height: 50px;
+        width: 50px;
+    }
+}
